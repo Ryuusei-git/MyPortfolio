@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/destyle.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@200;300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Cosmic Background -->
+        <div class="cosmic-bg"></div>
+
+        <!-- Stars Canvas -->
+        <canvas id="starCanvas"></canvas>
+
+        <!-- Nebula Particles -->
+        <div class="nebula-particles" id="particles"></div>
+
+        <!-- Custom Cursor -->
+        <div class="cursor" id="cursor"></div>
+
+        <!-- Loading Screen -->
+        <div class="loading-screen" id="loadingScreen">
+            <div class="loader"></div>
+        </div>
+
+        <!-- Header -->
+        <header>
+            <div class="header-content">
+                <div class="logo">Portfolio</div>
+                <nav>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#works">Works</a></li>
+                    </ul>
+                </nav>
+                <button id="drawerButton" class="menu-toggle">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Hero Section -->
+            <section id="hero" class="hero">
+                <h1 class="hero-title">My PortFolio</h1>
+                <p class="hero-subtitle">Ryuusei Uchimoto</p>
+            </section>
+
+            <!-- Profile Section -->
+            <section id="profile" class="section">
+                <h2 class="section-title">Profile</h2>
+                <div class="profile-content">
+                    <img src="images/myimg.jpg" alt="Profile" class="profile-image" />
+                    <div class="profile-info">
+                        <h3>内本　龍成</h3>
+                        <p class="subtitle">Uchimoto Ryuusei</p>
+                        <div class="profile-text">
+                            兵庫県尼崎市出身、2000年生まれ。<br />
+                            高校卒業後、化粧品OEM会社にて約5年間、生産ラインのラインマネージャーとして従事。<br />
+                            現場のマネジメントを行う中で、元々好きだった「つくること」「デザインすること」への思いが再燃。<br />
+                            2024年12月より創造社リカレントスクール三宮校に通い、デザインについて基礎から学び直しています。<br />
+                            趣味はプロ野球観戦（阪神タイガースファンです）、音楽鑑賞、舞台鑑賞。わりと浅く広く、いろいろ楽しむタイプです。
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Works Section -->
+            <section id="works" class="section">
+                <h2 class="section-title">The Works</h2>
+                <div class="works-grid">
+                    <a href="img01.html">
+                        <div class="work-item">
+                            <img src="images/img1.jpg" alt="Work 1" class="work-image" />
+                            <div class="work-overlay">
+                                <span>View Project</span>
+                            </div>
+                        </div></a
+                    >
+
+                    <a href="img02.html">
+                        <div class="work-item">
+                            <img src="images/img2.jpg" alt="Work 2" class="work-image" />
+                            <div class="work-overlay">
+                                <span>View Project</span>
+                            </div>
+                        </div></a
+                    >
+
+                    <a href="img03.html">
+                        <div class="work-item">
+                            <img src="images/img3.jpg" alt="Work 3" class="work-image" />
+                            <div class="work-overlay">
+                                <span>View Project</span>
+                            </div>
+                        </div></a
+                    >
+
+                    <a href="img04.html">
+                        <div class="work-item">
+                            <img src="images/img4.jpg" alt="Work 4" class="work-image" />
+                            <div class="work-overlay">
+                                <span>View Project</span>
+                            </div>
+                        </div></a
+                    >
+
+                    <a href="img05.html">
+                        <div class="work-item">
+                            <img src="images/img5.jpg" alt="Work 5" class="work-image" />
+                            <div class="work-overlay">
+                                <span>View Project</span>
+                            </div>
+                        </div></a
+                    >
+
+                    <a href="img06.html">
+                        <div class="work-item">
+                            <img src="images/img6.jpg" alt="Work 6" class="work-image" />
+                            <div class="work-overlay">
+                                <span>View Project</span>
+                            </div>
+                        </div></a
+                    >
+                    <a href="img07.html">
+                        <div class="work-item">
+                            <img src="images/img7.jpg" alt="Work 7" class="work-image" />
+                            <div class="work-overlay">
+                                <span>View Project</span>
+                            </div>
+                        </div></a
+                    >
+                    <a href="img08.html">
+                        <div class="work-item">
+                            <img src="images/img8.jpg" alt="Work 8" class="work-image" />
+                            <div class="work-overlay">
+                                <span>View Project</span>
+                            </div>
+                        </div></a
+                    >
+                    <a href="img9.html">
+                        <div class="work-item">
+                            <img src="images/img9.jpg" alt="Work 9" class="work-image" />
+                            <div class="work-overlay">
+                                <span>View Project</span>
+                            </div>
+                        </div></a
+                    >
+                </div>
+            </section>
+        </main>
+
+        <!-- Floating Action Button -->
+        <button class="fab" id="backToTop">↑</button>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Uchimoto Ryuusei. All rights reserved.</p>
+        </footer>
+    </body>
+    <script src="js/script.js"></script>
+</html>

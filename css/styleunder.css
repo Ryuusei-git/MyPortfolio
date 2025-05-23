@@ -1,0 +1,217 @@
+/* ***********************************変数******************************************* */
+:root {
+    /* 色*********************************** */
+    --baseColor: #121212;
+    --fontColor: #e0e0e0;
+    --accentColor: #5f9ea0;
+    /* 下記は作るのもいいかも〜で一応用意しています */
+    /* フォントサイズ*********************************** */
+    --fontsizeLarge: 3rem;
+    --fontsizeMedium: 2rem;
+    --fontsizeSmall: 1rem;
+    /* スペースサイズ*********************************** */
+    --spaceLarge: 3rem;
+    --spaceMedium: 2rem;
+    --spaceSmall: 1rem;
+}
+/* ***********************************変数******************************************* */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body p img {
+    width: 50%;
+    height: 50%;
+}
+
+body {
+    background-color: var(--baseColor);
+    color: var(--fontColor);
+}
+
+.main {
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 中央揃え */
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 4rem;
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    margin: 4rem;
+}
+
+.setu {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem; /* 下の余白を追加 */
+    width: 70%;
+    margin: 0 auto;
+}
+
+.setu p {
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-top: 2ch;
+    padding-bottom: 2ch;
+    letter-spacing: 0.5ch;
+}
+
+.button button {
+    margin: 4rem 5rem;
+    width: 100px;
+}
+
+.button {
+    text-align: center;
+}
+
+.button button {
+    transition: transform 0.2s ease;
+}
+
+.button button:hover {
+    transform: scale(2);
+}
+
+/* ピクピク***************************************************** */
+@keyframes twitch {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        transform: translate(1px, -1px) scale(1.01);
+    }
+    50% {
+        transform: translate(-1px, 1px) scale(0.99);
+    }
+    75% {
+        transform: translate(1px, 1px) scale(1.01);
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+}
+.piku-piku {
+    animation: twitch 1s infinite ease-in-out;
+}
+
+/* ピクピク***************************************************** */
+
+/* ページ遷移のフェードアウト用 ***********************************************/
+.fade-out {
+    animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ページ読み込み時のフェードイン */
+body {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* ページ遷移のフェードアウト用 ***********************************************/
+
+/* ===== カスタムカーソル =====****************************** */
+#cursor,
+#cursor-follower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: transform 0.15s ease;
+}
+
+/* メインの小さい点（白） */
+#cursor {
+    width: 4px;
+    height: 4px;
+    background: white;
+}
+
+/* 追従する大きめの円 */
+#cursor-follower {
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: width 0.2s ease, height 0.2s ease;
+}
+
+/* ホバー時に拡大 */
+.hover-effect:hover ~ #cursor-follower {
+    width: 60px;
+    height: 60px;
+}
+
+/* ===== カスタムカーソル =====****************************** */
+
+/* 星空 ***********************************************/
+#starCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: transparent;
+}
+/* 星空 ***********************************************/
+
+/* メディクエリ***************************************************** */
+@media screen and (max-width: 850px) {
+    .button button {
+        margin: 4rem 4rem;
+        width: 50px;
+    }
+}
+
+/* メディクエリ***************************************************** */
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1rem;
+    }
+
+    .setu p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .button button {
+        margin: 3rem 2rem;
+        width: 15px;
+    }
+}
