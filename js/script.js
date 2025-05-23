@@ -169,3 +169,18 @@ menuLinks.forEach((link) => {
 });
 
 // ********************ハンバーガーメニュー********************************************
+
+const astronaut = document.getElementById("astronaut");
+const speech = document.getElementById("speechBubble");
+
+astronaut.addEventListener("click", () => {
+    // すでに表示中なら非表示にする
+    if (speech.style.display === "block") {
+        speech.style.display = "none";
+    } else {
+        speech.style.display = "block";
+        setTimeout(() => {
+            speech.style.display = "none";
+        }, 4000); // 4秒後に消える
+    }
+});
