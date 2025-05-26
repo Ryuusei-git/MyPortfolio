@@ -420,6 +420,7 @@ main {
     border: none;
     color: white;
     font-size: 1.5rem;
+    z-index: 2000;
 }
 
 .fab:hover {
@@ -489,16 +490,18 @@ footer {
         display: flex; /* openクラスが付いた時に表示 */
     }
 
+    header {
+        position: relative;
+        /* その他のスタイルはそのままでOK */
+    }
+
     /* ハンバーガーボタンを表示 */
     #drawerButton {
-        display: block; /* モバイルでハンバーガーボタンを表示 */
-        position: relative; /* fixedからrelativeに変更 */
-        right: auto;
-        top: auto;
+        display: block;
+        position: absolute; /* ← fixedだと不具合起きやすい */
+        top: 1rem; /* ← これで十分な余白を確保 */
+        right: 2rem;
         z-index: 1001;
-        background: none;
-        border: none;
-        cursor: pointer;
     }
 
     .menu-toggle {
