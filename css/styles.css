@@ -548,6 +548,10 @@ footer {
         display: block;
         margin: auto;
     }
+
+    .profile-text {
+        text-align: left;
+    }
 }
 
 /* デスクトップでハンバーガーボタンを非表示 */
