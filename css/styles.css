@@ -500,10 +500,16 @@ footer {
         display: block;
         position: fixed;
         top: 1rem;
-        right: calc(env(safe-area-inset-right, 0px) + 1rem);
+        right: calc(env(safe-area-inset-right, 0px) + 0.5rem);
+        width: 44px;
+        height: 44px;
         z-index: 1001;
-        width: 40px;
-        height: 40px;
+        touch-action: manipulation;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
     }
 
     .menu-toggle {
