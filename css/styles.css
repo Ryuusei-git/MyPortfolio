@@ -491,17 +491,19 @@ footer {
     }
 
     header {
-        position: relative;
+        position: fixed;
         /* その他のスタイルはそのままでOK */
     }
 
     /* ハンバーガーボタンを表示 */
     #drawerButton {
         display: block;
-        position: absolute; /* ← fixedだと不具合起きやすい */
-        top: 1rem; /* ← これで十分な余白を確保 */
-        right: 2rem;
+        position: fixed;
+        top: 1rem;
+        right: calc(env(safe-area-inset-right, 0px) + 1rem);
         z-index: 1001;
+        width: 40px;
+        height: 40px;
     }
 
     .menu-toggle {
